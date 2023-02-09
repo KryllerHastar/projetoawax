@@ -5,7 +5,26 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="./assets/css/style.css" />
+        
+        <script type="text/javascript">
+            window.onload = function(){
+                document.querySelector(".menu-opener").addEventListener("click", function(){
+                    if(document.querySelector("nav").style.display == "flex") {
+                         document.querySelector("nav").style.display = "none"
+                         
+                    } else {
+                        document.querySelector(" nav").style.display = "flex";
+                       
+                    }
+
+                });
+
+        };
+        </script>
         <title>Projeto Awax</title>
+
+        
+        
     </head>
     <body>
         <header>
@@ -15,8 +34,8 @@
                 </div>
                 <div class="header-menu">
                     <img class="menu-opener" src="assets/images/menu.png" alt="">
-                    <nav class="">
-                        <ul>
+                    <nav >
+                        <ul class="">
                             <li><a href="#">home</a></li>
                             <li><a href="#">About us</a></li>
                             <li><a href="#">services</a></li>
@@ -578,7 +597,7 @@
             <section class="share-about">
                 <div class="share-itens">
                      <img src="assets/images/share.png" alt="">
-                     <p>Tell About Us:</p>
+                     <p class="none">Tell About Us:</p>
                 </div>
                 <div class="share-itens">
                     <img src="assets/images/tw.png" alt="">
@@ -657,7 +676,7 @@
             </section>
 
             <footer class="footer-container">
-                <div class="ball-up"></div>
+      
                    <div class="footer-area">
                       <div class="footer-itens">
                         <div class="footer-media">
@@ -689,7 +708,7 @@
                                 <input type="text" name="email" placeholder="EMAIL TO SUBSCRIBE">
                                
                             </form>
-                             <input type="button" value="Subis">
+                             <input type="button" value="Subiscribe">
                         </div>
                       </div> 
                     </div> 

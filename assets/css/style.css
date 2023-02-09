@@ -729,7 +729,7 @@ header {
     text-align: center;
 }
 .section-fact {
-    flex: 1;
+    margin: auto;
 }
 
 .section-facts-title {
@@ -994,16 +994,20 @@ header {
         line-height: 23px;
         color: black;
         align-items: center;
-        margin-top: 15px;
-        margin-bottom: 15px;
-        padding: 20px;
+        margin-bottom: 30px;
+        margin-left: 30px;
+        margin-bottom: 30px;
         font-size: 18px;
         font-weight: 500;
+        line-height: 30px;
     }
     .section-aboutus-right {
-        width: 500px;
+        width: 600px;
         box-shadow: none;
         margin-left: 30px;
+    }
+    .section-aboutus .button {
+        font-size: 18px;
     }
     .section-services {
         flex-wrap: wrap;
@@ -1017,10 +1021,17 @@ header {
         font-weight: 600;
         margin-bottom: 10px;
     }
+    .section-projects--photo-btn {
+        padding: 14px 20px;
+        font-size: 20px;
+    }
 
+    .section-team {
+        max-width: 580px;
+    }
     .section-team .slider {
-        width: 350px;
-        margin-left: 14px;
+        width: 270px;
+        margin-left: 0px;
     }
     .default .section-descri {
         font-size: 14px;
@@ -1073,8 +1084,423 @@ header {
         font-size: 13px;
         font-weight: 600;
     }
-    .section-premium-subtitle h3 {
+    .section-facts {
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+    }
+    .section-fact {
+        width: 400px;
+        margin-bottom: 20px;
+    }
+    .section-facts-title {
+        font-size: 45px;
+    }
+
+    .section-facts-subtitle {
+        font-size: 20px;
+    }
+    .section-fact p {
+        font-size: 17px;
+        color: #d1d1d1;
+        font-weight: 500;
+        line-height: 25px;
+    }
+    .share-itens p {
+        display: flex;
+        color: #777676;
         font-size: 18px;
+        align-items: center;
+        padding-right: 20px;
+        font-weight: 500;
+        margin-left: 15px;
+    }
+    .section-contact {
+        max-width: 500px;
+    }
+    .default .section-title {
         font-weight: 600;
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+    .section-contact input[type="text"],
+    .section-contact textarea {
+        height: 75px;
+        margin-bottom: 20px;
+    }
+    .section-contact input[type="text"],
+    .section-contact textarea::-webkit-input-placeholder {
+        font-size: 17px;
+    }
+    .section-contact-btn {
+        padding: 14px 45px;
+        font-size: 17px;
+    }
+
+    .section-map-info {
+        width: auto;
+        margin: 30px;
+    }
+    .section-map-itens p {
+        font-size: 20px;
+    }
+    .section-map-itens {
+        margin-bottom: 30px;
+    }
+    .section-map-itens:last-child {
+        margin-bottom: 0;
+    }
+    .footer-area {
+        padding: 30px;
+    }
+    .footer-media {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    .footer-media h3 {
+        display: none;
+    }
+    .footer-itens {
+        flex-direction: column;
+    }
+    .footer-text {
+        font-size: 18px;
+        line-height: 33px;
+        color: #c2bebe;
+        margin-bottom: 20px;
+        font-weight: bold;
+    }
+    .footer-form {
+        margin-left: 220px;
+        padding: 20px;
+    }
+    .footer-form input::-webkit-input-placeholder {
+        color: white;
+    }
+}
+@media (max-width: 450px) {
+    .menu-opener {
+        display: block;
+        width: 45px;
+        margin-right: 35px;
+    }
+    nav {
+        display: none;
+        position: absolute;
+        z-index: 99;
+        width: 70vw;
+        height: calc(100vh - 100px);
+        background: rgba(0, 0, 0, 0.92);
+        top: 100px;
+        right: 0;
+    }
+    .header-menu ul {
+        flex-direction: column;
+    }
+
+    .header-menu li a {
+        font-size: 18px;
+        height: 74px;
+        font-weight: bold;
+        margin-left: 26px;
+        border: 0;
+    }
+    .header-menu nav a:hover {
+        color: #ab8253;
+        border: 0;
+    }
+    .banner h1 {
+        font-size: 36px;
+    }
+    .banner h2 {
+        font-size: 36px;
+    }
+
+    .header-logo {
+        margin-left: 30px;
+    }
+
+    .default .section-title {
+        font-weight: 600;
+        font-size: 30px;
+    }
+    .default .section-descri {
+        color: #9c9a9a;
+        font-size: 12px;
+    }
+
+    .section-aboutus {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .section-aboutus-left {
+        display: flex;
+        flex-direction: column;
+        line-height: 23px;
+        color: black;
+        align-items: center;
+        margin-bottom: 20px;
+        margin-left: 19px;
+        font-size: 17px;
+        font-weight: 500;
+        line-height: 28px;
+        padding: 28px;
+    }
+    .section-aboutus-right {
+        width: auto;
+        margin-left: 30px;
+        margin-right: 30px;
+        box-shadow: none;
+    }
+    .section-aboutus-right img {
+        width: 100%;
+        box-shadow: 0px 0px 6px rgb(1, 1, 1);
+    }
+    .section-aboutus .button {
+        font-size: 18px;
+    }
+    .section-services {
+        flex-wrap: wrap;
+    }
+
+    .section-services-icons {
+        max-width: 100%;
+        margin-top: 30px;
+    }
+    .section-services-icons p {
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+    .section-projects {
+        text-align: center;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    .section-projects--photo-btn {
+        padding: 14px 20px;
+        font-size: 20px;
+    }
+    .section-projects--photo {
+        width: 320px;
+    }
+    .section-projects-photoarea {
+        width: 300px;
+        height: 200px;
+    }
+
+    .section-team {
+        max-width: 280px;
+    }
+    .section-team .slider {
+        width: 270px;
+        margin-left: 0px;
+    }
+    .default .section-descri {
+        font-size: 14px;
+    }
+    .section-happy-name {
+        font-size: 27px;
+    }
+    .section-happy-role {
+        font-size: 20px;
+    }
+    .section-happy-descri {
+        width: 350px;
+        font-size: 17px;
+        line-height: 27px;
+        font-weight: 500;
+    }
+    .sponsorship-area img {
+        width: 50px;
+    }
+    .sponsorship-area {
+        justify-content: space-around;
+    }
+    .section-price {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .section-price-table {
+        width: 300px;
+        height: 380px;
+        flex: none;
+    }
+    .section-price-title {
+        font-size: 26px;
+    }
+    .section-price-value {
+        margin-top: 10px;
+        font-size: 30px;
+    }
+    .section-price-date {
+        font-size: 13px;
+    }
+    .section-price-descri {
+        font-size: 16px;
+        margin: auto;
+    }
+    .section-premium-subtitle {
+        margin-left: 33px;
+        margin-top: 10px;
+    }
+    .section-premium-itens img {
+        width: 30px;
+        height: 30px;
+        margin-right: 10px;
+        margin-left: 33px;
+        margin-top: 16px;
+    }
+
+    .section-premium-slider-area {
+        flex-direction: column;
+    }
+    .section-premium-right {
+        margin-right: 25px;
+    }
+    .section-premium-left {
+        margin-left: 50px;
+    }
+    .section-premium-left img {
+        width: 300px;
+        margin-bottom: 15px;
+    }
+    .section-premium-subtitle p {
+        color: #9c9a9a;
+        line-height: 20px;
+        font-size: 16px;
+        font-weight: 600;
+    }
+    .section-premium-subtitle h3 {
+        font-size: 19px;
+        color: #a19f9f;
+        line-height: 30px;
+        font-weight: normal;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        font-weight: 500;
+    }
+    .section-facts {
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+    }
+    .section-fact {
+        width: 400px;
+        margin-bottom: 20px;
+    }
+    .section-facts-title {
+        font-size: 45px;
+    }
+
+    .section-facts-subtitle {
+        font-size: 20px;
+    }
+    .section-fact p {
+        font-size: 17px;
+        color: #d1d1d1;
+        font-weight: 500;
+        line-height: 25px;
+    }
+    .share-itens .none {
+        display: none;
+    }
+
+    .share-itens p {
+        display: flex;
+        color: #777676;
+        font-size: 14px;
+        align-items: center;
+        padding-right: 9px;
+        font-weight: 500;
+        margin-left: 4px;
+    }
+
+    .section-contact {
+        max-width: 500px;
+    }
+    .default .section-title {
+        font-weight: 600;
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+    .section-contact input[type="text"],
+    .section-contact textarea {
+        padding: 10px;
+        margin-top: 10px;
+        margin-left: 0px;
+    }
+    .section-contact input[type="text"],
+    .section-contact textarea::-webkit-input-placeholder {
+        font-size: 15px;
+    }
+    .section-contact-btn {
+        padding: 14px 45px;
+        font-size: 17px;
+    }
+
+    .section-map {
+        padding: 0;
+        padding-bottom: 250px;
+        background-position: none;
+        background-size: none;
+    }
+    .section-map-area {
+        width: auto;
+    }
+
+    .section-map-info {
+        width: auto;
+        margin: 0;
+    }
+    .section-map-itens p {
+        font-size: 20px;
+    }
+    .section-map-itens {
+        margin-bottom: 30px;
+    }
+    .section-map-itens:last-child {
+        margin-bottom: 0;
+    }
+    .footer-area {
+        padding: 30px;
+    }
+    .footer-media {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+        order: 2;
+    }
+    .footer-media h3 {
+        display: none;
+    }
+    .footer-itens {
+        flex-direction: column;
+    }
+    .footer-text {
+        order: 3;
+        font-size: 18px;
+        line-height: 33px;
+        color: #c2bebe;
+        margin-bottom: 16px;
+        font-weight: bold;
+        margin-left: 20px;
+    }
+    .footer-media-img {
+        width: 35px;
+        height: 35px;
+    }
+    .footer-media-img img {
+        width: 15px;
+        height: 15px;
+    }
+    .footer-form {
+        margin-left: 30px;
+        padding: 20px;
+        margin-bottom: 30px;
+    }
+    .footer-form input::-webkit-input-placeholder {
+        color: white;
     }
 }
